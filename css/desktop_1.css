@@ -1,0 +1,41 @@
+@import url('./reset.css');
+@import url('./form_unify.css');
+
+.wrapper{
+  width: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+img{
+  width: 480px;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  padding: 105px 0;
+  border-bottom: solid 1px #777;
+}
+
+li:last-child{
+  border: none;
+}
+
+h1{
+  line-height: 33.1px;
+  /* margin-bottom: 80px; */
+}
+
+h2{
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #e84;
+}
+
+.words{
+  width: 480px;
+  padding-top: 15px;
+}

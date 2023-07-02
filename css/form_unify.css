@@ -1,0 +1,51 @@
+@import url('./reset.css');
+form{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding: 10px 20px;
+
+  background-color: #e84;
+  color: #eee;
+}
+
+label{
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+input{
+  appearance: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  /* outline: none; */
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+input:checked{
+  background-color: #eee;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+}
+
+/* unify */
+
+h1{
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+h3{
+  font-size: 20px;
+}
+
+p{
+  line-height: 30px;
+  letter-spacing: 1.8px;
+  color: #333;
+}

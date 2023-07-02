@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/desktop_1.css" />
+		<title>desktop_1</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<iframe src="./form_unify.html" frameborder="0" width="100%"></iframe>
+
+			<div id="desktop_1">
+				<section class="main_group container">
+					<h1>社團活動</h1>
+					<!-- 三組資料 -->
+					<ul v-for="groups in groupData" :key="groups">
+						<!-- 每組資料裡面的項目 -->
+						<li v-for="group in groups" :key="group.id">
+							<img :src="`./images/group_0${group.id}.jpg`" alt="" />
+							<div class="words">
+								<h2>{{ group.name }}</h2>
+								<p>{{group.content}}</p>
+							</div>
+						</li>
+            
+						<!-- <li>
+							<img src="./images/group_01.jpg" alt="" />
+							<div class="words">
+								<h2>{{ groups[0].name }}</h2>
+								<p>{{groups[0].content}}</p>
+							</div>
+						</li>
+						<li>
+							<img src="./images/group_02.jpg" alt="" />
+							<div class="words">
+								<h2>{{ groups[1].name }}</h2>
+								<p>{{groups[1].content}}</p>
+							</div>
+						</li>
+						<li>
+							<img src="./images/group_03.jpg" alt="" />
+							<div class="words">
+								<h2>{{ groups[2].name }}</h2>
+								<p>{{groups[2].content}}</p>
+							</div>
+						</li> -->
+					</ul>
+				</section>
+			</div>
+			<!-- vue -->
+		</div>
+		<!--wrapper-->
+
+		<script src="./js/vendors/vue.global.js"></script>
+		<!-- <script src="./js/vendors/vue.global.prod.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+		<script src="./js/destop_1.js"></script>
+	</body>
+</html>

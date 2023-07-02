@@ -1,0 +1,52 @@
+{
+  "members": [
+    {
+      "name": "蔡一霖",
+      "group_id": 2
+    },
+    {
+      "name": "雷小二",
+      "group_id": 0
+    },
+    {
+      "name": "張三",
+      "group_id": 1
+    },
+    {
+      "name": "李四",
+      "group_id": 3
+    },
+    {
+      "name": "王老五",
+      "group_id": 1
+    },
+    {
+      "name": "吳六",
+      "group_id": 2
+    },
+    {
+      "name": "劉七",
+      "group_id": 3
+    },
+    {
+      "name": "蔡比八",
+      "group_id": 0
+    },
+    {
+      "name": "陳玲九",
+      "group_id": 2
+    },
+    {
+      "name": "林十",
+      "group_id": 3
+    },
+    {
+      "name": "鄭十一",
+      "group_id": 0
+    },
+    {
+      "name": "郭十二",
+      "group_id": 0
+    }
+  ]
+}
