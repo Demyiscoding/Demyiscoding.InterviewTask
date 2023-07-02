@@ -33,10 +33,18 @@ input:checked{
 }
 
 /* unify */
+.wrapper{
+  width: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
 
 h1{
   font-size: 28px;
   font-weight: 600;
+  line-height: 33.1px;
   color: #333;
 }
 

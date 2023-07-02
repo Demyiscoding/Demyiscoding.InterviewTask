@@ -1,14 +1,6 @@
 @import url('./reset.css');
 @import url('./form_unify.css');
 
-.wrapper{
-  width: 100%;
-}
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
-
 img{
   width: 480px;
 }
@@ -22,11 +14,6 @@ li{
 
 li:last-child{
   border: none;
-}
-
-h1{
-  line-height: 33.1px;
-  /* margin-bottom: 80px; */
 }
 
 h2{

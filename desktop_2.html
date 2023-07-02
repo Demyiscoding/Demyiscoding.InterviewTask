@@ -4,17 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/desktop_1.css" />
-		<title>desktop_1</title>
+		<link rel="stylesheet" href="./css/desktop_2.css" />
+		<title>desktop_2</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<iframe src="./form_unify.html" frameborder="0" width="100%"></iframe>
-
-    <section  class="main_activity container">
-      
-
-    </section>
-  
+    <div id="groupApp">
+      <section  class="main_activity container">
+        <h1>活動管理</h1>
+        
+        <ul v-for="groups in groupData" :key="groups">
+          <li v-for="activity in groups" :key="activity">
+            <h3>{{ activity.name }}</h3>
+            <p>{{ activity.description }}</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  <!-- vue -->
+    <script src="./js/vendors/vue.global.js"></script>
+		<!-- <script src="./js/vendors/vue.global.prod.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+		<script src="./js/group.js"></script>
 </body>
 </html>

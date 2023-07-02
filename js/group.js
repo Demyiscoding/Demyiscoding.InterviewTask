@@ -1,4 +1,4 @@
-let desktop_1 = Vue.createApp({
+let groupApp = Vue.createApp({
   data(){
     return{
       groupData: [],
@@ -10,8 +10,7 @@ let desktop_1 = Vue.createApp({
       .then(response => {
           this.groupData = response.data;
           // console.log(response.data);
-          console.log(this.groupData);
-          // console.log(this.groupData.name);
+          // console.log(this.groupData);
         }
       )
     }
@@ -21,6 +20,6 @@ let desktop_1 = Vue.createApp({
   }
 
 
-}); desktop_1.mount("#desktop_1")
+}); groupApp.mount("#groupApp")
 
 
