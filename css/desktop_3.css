@@ -1,0 +1,38 @@
+@import url('./reset.css');
+@import url('./form_unify.css');
+
+.ul_d3{
+margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+.li_d3{
+  width: 140px;
+  background-color: #eee;
+  padding: 20px;
+  margin: 15px 10px ;
+  text-align: center;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.pics{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: hsl(24, 83%, 60% ,80%);
+  margin: 0 auto;
+}
+
+h4{
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.p_d3{
+  font-size: 14px;
+}
+

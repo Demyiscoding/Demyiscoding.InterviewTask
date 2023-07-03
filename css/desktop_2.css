@@ -1,22 +1,26 @@
 @import url('./reset.css');
 @import url('./form_unify.css');
 
-ul{
+.ul_d2{
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
 
-li{
+.li_d2{
   background-color: #eee;;
   padding: 25px;
-  width: 340px;
-  height: 100px;
+  width: 290px;
+  height: 90px;
   margin: 0 10px;
   border-radius: 10px;
 }
 
 h3{
   padding-bottom: 15px;
+}
+
+.p_d2{
+  letter-spacing: 1.2px;
 }

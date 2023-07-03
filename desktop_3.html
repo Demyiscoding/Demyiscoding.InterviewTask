@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/desktop_3.css" />
+		<title>desktop_3</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<iframe src="./form_unify.html" frameborder="0" width="100%"></iframe>
+
+    <div id="membersApp">
+      <section  class="main_members container">
+        <h1>會員管理</h1>
+        <ul class="ul_d3" v-for="members in membersData" :key="members">
+          <li class="li_d3" v-for="member in members" :key="member" >
+            <div class="pics"></div>
+            <h4>{{member.name}}</h4>
+
+<!--未成功＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+            <template v-for="group in mergeData" :key="group">
+              <p class="p_d3">{{ group.inGroup }}</p>
+            </template>
+<!--未成功＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->     
+
+            <template  v-if="member.group_id === 0">
+              <p class="p_d3">無團之徒</p>
+            </template>  
+          </li>
+        </ul>
+        
+      </section>
+    </div>
+  <!-- vue -->
+    <script src="./js/vendors/vue.global.js"></script>
+		<!-- <script src="./js/vendors/vue.global.prod.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+		<script src="./js/members.js"></script>
+</body>
+</html>

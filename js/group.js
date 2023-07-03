@@ -20,6 +20,6 @@ let groupApp = Vue.createApp({
   }
 
 
-}); groupApp.mount("#groupApp")
+}); groupApp.mount("#groupApp");
 
 

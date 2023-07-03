@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/form_unify.css">
-  <title>form_unify</title>
-</head>
-<body>
-  <form>
-    <input type="radio" name="page" id="group" checked>
-    <label for="group">社團活動</label>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/form_unify.css" />
+		<title>form_unify</title>
+	</head>
+	<body>
+		<script>
+			import VueRouter from "vue-router";
+			import Vue from "vue";
+			Vue.use(VueRouter);
+		</script>
 
-    <input type="radio" name="page" id="activity">
-    <label for="activity">活動管理</label>
+		<div class="wrapper">
+			<div id="selectApp">
+				<!-- // ＝＝＝＝＝＝路由分頁 未成功＝＝＝＝＝＝ -->
+				<form>
+					<input
+						type="radio"
+						name="page"
+						id="group"
+						value="desktop_1"
+						@click="currentPage('desktop_1.html')"
+						checked
+					/>
+					<label for="group">社團活動</label>
 
-    <input type="radio" name="page" id="member"> 
-    <label for="member">會員管理</label>
-  </form>
-</body>
+					<input
+						type="radio"
+						name="page"
+						id="activity"
+						value="desktop_2"
+						@click="currentPage('desktop_2.html')"
+					/>
+					<label for="activity">活動管理</label>
+
+					<input
+						type="radio"
+						name="page"
+						id="member"
+						value="desktop_3"
+						@click="currentPage('desktop_3.html.html')"
+					/>
+					<label for="member">會員管理</label>
+				</form>
+				<!-- // ＝＝＝＝＝＝路由分頁 未成功＝＝＝＝＝＝ -->
+			</div>
+		</div>
+
+		<script src="./js/vendors/vue.global.js"></script>
+		<!-- <script src="./js/vendors/vue.global.prod.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+		<script src="./js/form.js"></script>
+	</body>
 </html>

@@ -14,15 +14,16 @@
       <section  class="main_activity container">
         <h1>活動管理</h1>
         
-        <ul v-for="groups in groupData" :key="groups">
-          <li v-for="activity in groups" :key="activity">
+        <ul class="ul_d2" v-for="groups in groupData" :key="groups">
+          <li class="li_d2" v-for="activity in groups" :key="activity">
             <h3>{{ activity.name }}</h3>
-            <p>{{ activity.description }}</p>
+            <p class="p_d2">{{ activity.description }}</p>
           </li>
         </ul>
       </section>
     </div>
   <!-- vue -->
+  </div>
     <script src="./js/vendors/vue.global.js"></script>
 		<!-- <script src="./js/vendors/vue.global.prod.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
